@@ -11,6 +11,6 @@ Computermuseum Arnhem.
 
 Computermuseum Arnhem is run by members of the Arnhem Hackerspace Hack42.
 
-http://www.computermuseumarnhem.nl/
-https://hack42.nl/
+- http://www.computermuseumarnhem.nl/
+- https://hack42.nl/
 
