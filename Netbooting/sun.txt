@@ -1,0 +1,17 @@
+Netbooting SUN devices:
+
+JavaStation 1 (Mr Coffee): 
+
+    Step 1:
+
+	
+	mac-adres en hostname toevoegen aan /etc/ethers
+	ip-adres  en hostname toevoegen aan /etc/hosts
+	herstarten van rarpd
+    
+    Step 2:
+    ...
+
+
+
+vim: set sw=4 sts=4:
