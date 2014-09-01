@@ -4,14 +4,40 @@ JavaStation 1 (Mr Coffee):
 
     Step 1:
 
-	
 	mac-adres en hostname toevoegen aan /etc/ethers
+
+	    11:22:33:44:55:66 hostname
+
 	ip-adres  en hostname toevoegen aan /etc/hosts
+
+	    192.168.192.168 hostname
+
 	herstarten van rarpd
     
     Step 2:
-    ...
+
+	mac-adres, ip-adres, en hostname toevoegen aan dhcpd.conf
+
+	    host hostname {
+		hardware ethernet 11:22:33:44:55:66;
+		fixed-address 192.168.192.168;
+		option hostname "hostname";
+	    }
+
+	(niet vergeten 'allow bootp' aan te zetten)
+
+    Step 3:
+
+	TFTP.
+
+    Step 4:
+
+	???
+
+    Step 5:
+
+	Profit.
 
 
-
-vim: set sw=4 sts=4:
+--
+vim: set sw=4 sts=4 ai:
