@@ -5,7 +5,7 @@ use strict;
 use Device::SerialPort;
 
 my ( $comport, $baudrate, $parity, $databits, $stopbits, $handshake ) = 
-	qw( /dev/ttyUSB0 1200 none 8 1 none );
+	qw( /dev/ttyS0   1200 none 8 1 none );
 
 my ( $output ) = qw( content.raw );
 
