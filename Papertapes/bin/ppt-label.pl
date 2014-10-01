@@ -3,7 +3,7 @@
 use strict;
 
 use Config::Tiny;
-use Text::Wrap;
+use Text::Wrap qw( wrap $columns );
 
 my $ini = Config::Tiny->new();
 
@@ -11,10 +11,11 @@ $ini = Config::Tiny->read( 'ppt.ini' ) if -e 'ppt.ini';
 
 my $file = 'label.txt';
 
-$ini->{ label }{ format } = 'old';
+$ini->{ label }{ format } ||= 'old';
 
 while ( my $arg = shift @ARGV ) {
 	$ini->{ label }{ format } = 'new' if $arg eq 'new';
+	$ini->{ label }{ format } = 'vg'  if $arg eq 'vg';
 }
 
 sub promptline {
@@ -29,7 +30,7 @@ sub promptline {
 	return $value || '';
 }
 
-{
+sub wrap_desc {
 	my $d = join "\n", (
 		$ini->{ label }{ desc  } || '',
 		$ini->{ label }{ desc1 } || '',
@@ -37,7 +38,7 @@ sub promptline {
 	);
 	$d =~ s/\\n/\n/ig;
 
-	$Text::Wrap::columns = 32;
+	$columns = 32;
 	$d = wrap( '', '', $d );
 
 	(
@@ -48,21 +49,33 @@ sub promptline {
 
 }
 
-$ini->{ label }{ label } = uc promptline( "Label:       ", $ini->{ label }{ label } );
-$ini->{ label }{ date  } = uc promptline( "Date:        ", $ini->{ label }{ date  } );
-$ini->{ label }{ code  } = uc promptline( "Code:        ", $ini->{ label }{ code  } );
-$ini->{ label }{ desc  } = uc promptline( "Description: ", $ini->{ label }{ desc  } );
-$ini->{ label }{ desc1 } = uc promptline( "          :: ", $ini->{ label }{ desc1 } );
-$ini->{ label }{ desc2 } = uc promptline( "          :: ", $ini->{ label }{ desc2 } );
-$ini->{ label }{ year  } = uc promptline( "Copyright:   ", $ini->{ label }{ year  } );
+if ( $ini->{ label }{ format } eq 'vg' ) {
+	$ini->{ label }{ label } = uc promptline( "Label:       ", $ini->{ label }{ label } );
+	$ini->{ label }{ date  } = uc promptline( "Date:        ", $ini->{ label }{ date  } );
+	$ini->{ label }{ desc  } = uc promptline( "Description: ", $ini->{ label }{ desc  } );
+} else {
+	$ini->{ label }{ label } = uc promptline( "Label:       ", $ini->{ label }{ label } );
+	$ini->{ label }{ date  } = uc promptline( "Date:        ", $ini->{ label }{ date  } );
+	$ini->{ label }{ code  } = uc promptline( "Code:        ", $ini->{ label }{ code  } );
+	$ini->{ label }{ desc  } = uc promptline( "Description: ", $ini->{ label }{ desc  } );
+	$ini->{ label }{ desc1 } = uc promptline( "          :: ", $ini->{ label }{ desc1 } );
+	$ini->{ label }{ desc2 } = uc promptline( "          :: ", $ini->{ label }{ desc2 } );
+	$ini->{ label }{ year  } = uc promptline( "Copyright:   ", $ini->{ label }{ year  } );
+}
 
-my $label = $ini->{ label }{ label };
-my $date  = $ini->{ label }{ date  };
-my $code  = $ini->{ label }{ code  };
-my $desc  = $ini->{ label }{ desc  };
-my $desc1 = $ini->{ label }{ desc1 };
-my $desc2 = $ini->{ label }{ desc2 };
-my $year  = $ini->{ label }{ year  };
+wrap_desc();
+
+$ini->{ label }{ desc  } ||= '';
+$ini->{ label }{ desc1 } ||= '';
+$ini->{ label }{ desc2 } ||= '';
+
+my $label = $ini->{ label }{ label } || '';
+my $date  = $ini->{ label }{ date  } || '';
+my $code  = $ini->{ label }{ code  } || '';
+my $desc  = $ini->{ label }{ desc  } || '';
+my $desc1 = $ini->{ label }{ desc1 } || '';
+my $desc2 = $ini->{ label }{ desc2 } || '';
+my $year  = $ini->{ label }{ year  } || '';
 
 format label_old =
 @<<<<<<<<<<<<<<<<<<<<  @>>>>>>>  @<<
@@ -88,6 +101,17 @@ $desc1 || ''
 $desc2 || ''
                            @<<<<<<<<<<<<<<
 	                   $year
+.
+
+format label_vg =
+@<<<<<<<<<<<<<<<<<<<<
+$label
+@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+"(C) VG DATA SYSTEMS LTD"
+@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$date
+@<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$desc || ''
 .
 
 $~ = "label_" . $ini->{ label }{ format };

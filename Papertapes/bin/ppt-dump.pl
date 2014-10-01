@@ -37,14 +37,17 @@ sub asc {
 
 binmode STDIN;
 
-printf "%s\t%s\t%s\t%s\t%s\n", "DEC"," HEX"," OCT"," CHAR", "       PPT";
-printf "%s\t%s\t%s\t%s\t%s\n", "---","----","----","------","-----------";
+printf "%s\t%s\t%s\t%s\t%s\t%s\n", " ADDR", "DEC"," HEX"," OCT"," CHAR", "       PPT";
+printf "%s\t%s\t%s\t%s\t%s\t%s\n", "------", "---","----","----","------","-----------";
 
+my $a = 0;
 while ( my $line = <> ) {
 
 	foreach my $b ( unpack( 'C*', $line ) ) {
 
-		printf "%3d\t0x%02x\t0%03o\t%s\t|%-9.9s|\n", $b, $b, $b, asc( $b ), ppt( $b );
+		printf "%5d:\t%3d\t0x%02x\t0%03o\t%s\t|%-9.9s|\n", $a, $b, $b, $b, asc( $b ), ppt( $b );
+		
+		$a++;
 
 	}
 }
