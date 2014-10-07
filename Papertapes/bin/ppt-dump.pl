@@ -45,7 +45,7 @@ while ( my $line = <> ) {
 
 	foreach my $b ( unpack( 'C*', $line ) ) {
 
-		printf "%5d:\t%3d\t0x%02x\t0%03o\t%s\t|%-9.9s|\n", $a, $b, $b, $b, asc( $b ), ppt( $b );
+		printf "%5d:\t%3d\t0x%02x\t0%03o\t%s\t|%-9.9s|\t%s\n", $a, $b, $b, $b, asc( $b ), ppt( $b ), asc( $b & 0177 );
 		
 		$a++;
 
