@@ -1,0 +1,9 @@
+dec-s8-uextb-a-pb1
+8/18/75
+M
+
+os/8 viii extension binary tape
+basic editor (basic.bn)
+tape 1 of 9
+
+copyright (c) digital equipment corporation 1969,72,74

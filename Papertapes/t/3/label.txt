@@ -1,0 +1,9 @@
+dec-s8-uextb-a-pb3
+8/18/75
+m
+
+os/8 viii extension binary tape
+basic post processor (bload.bn)
+tape 3 of 9
+
+copyright (c) digital equipment corporation 1969,74,74
