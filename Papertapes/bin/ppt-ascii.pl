@@ -21,7 +21,7 @@ foreach my $f ( @ppts ) {
 	next if ( $ascii[ $_ ] == 0xff and $ascii[ $_ - 1 ] == 0x89 ); # del after tab
 	next if ( $ascii[ $_ ] == 0x8d and $ascii[ $_ + 1 ] == 0x8a ); # cr before lf
 
-	print chr($_);
+	print chr( $ascii[ $_ ] & 0x7f);
     }
 
 }
