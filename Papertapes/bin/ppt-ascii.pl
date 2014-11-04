@@ -1,31 +1,28 @@
 #!/usr/bin/perl
 
+# vim: set sw=4 sts=4 si:
+
 use strict;
+use File::Basename;
+use lib dirname( $0 );
+use PPT;
 
-$/ = undef;
+my @ppts = @ARGV;
 
-my @ascii = unpack( "C*", <>  );
+foreach my $f ( @ppts ) {
+    my $ppt = PPT->open( $f ) or next;
 
+    my @ascii = $ppt->raw()->data();
 
-my $tab = 0;
-my $nwl = 0;
+    foreach ( 0 .. $#ascii ) {
 
+	next unless $ascii[ $_ ] & 0x80;
 
-foreach ( @ascii ) {
-
-	next unless $_ & 0x80;
-
-	$_ &= 0x7f;
-
-	if ( $tab && $_ == 0x7f ) {
-		$tab = 0;
-		next;
-	}
-	if ( $_ == 0x09 ) {
-		$tab = 1;
-	}
+	next if ( $ascii[ $_ ] == 0xff and $ascii[ $_ - 1 ] == 0x89 ); # del after tab
+	next if ( $ascii[ $_ ] == 0x8d and $ascii[ $_ + 1 ] == 0x8a ); # cr before lf
 
 	print chr($_);
+    }
 
 }
 

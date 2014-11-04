@@ -17,4 +17,11 @@ sub upgrade {
     my $self = shift;
 }
 
+sub data {
+    my $self = shift;
+
+    return unpack( 'C*', $self->{ data } ) if wantarray;
+    return $self->{ data };
+}
+
 1;

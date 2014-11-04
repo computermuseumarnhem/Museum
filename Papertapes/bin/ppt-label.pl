@@ -1,10 +1,29 @@
 #!/usr/bin/perl -w
+#vim: set sw=4s sts=4 si:
 
 use strict;
 
-use Config::Tiny;
+use File::Basename;
+use lib dirname( $0 );
+use PPT;
+
+my @ppts = @ARGV;
+
+foreach my $t ( @ppts ) {
+
+	my $ppt = PPT->open( $t ) or next;
+
+	my $lbl = $ppt->label();
+
+	print $lbl->output();
+
+
+
+
+use PPT;
 use Text::Wrap qw( wrap $columns );
 
+my $ppt = PPT->new(
 my $ini = Config::Tiny->new();
 
 $ini = Config::Tiny->read( 'ppt.ini' ) if -e 'ppt.ini';

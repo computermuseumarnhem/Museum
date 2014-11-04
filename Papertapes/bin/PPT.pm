@@ -6,9 +6,11 @@ my $version = 1;
 
 use Carp; 
 use Config::Tiny;
+use Data::Dumper;
 
 use PPT::Label;
 use PPT::Location;
+use PPT::Data;
 
 sub open {
     my $class = shift;
@@ -58,17 +60,30 @@ sub location {
 sub content {
     my $self = shift;
 
-    open FH, "<", $self->content_filename()
+    CORE::open FH, "<", $self->content_filename()
 	or die sprintf "Can't open %s: %s", $self->content_filename(), "$!";
     binmode FH;
     local $/ = undef;
     $self->{ data } = <FH>;
-    close FH;
+    CORE::close FH;
     
+}
+
+sub raw {
+    my $self = shift;
+
+    $self->content() unless $self->{ data };
+
+    return PPT::Data->new( $self->{ data } );
 }
 
 sub content_filename {
     my $self = shift;
+
+    if ( $self->{ ppt }{ content }{ raw } ) {
+	$self->{ ppt }{ content }{ filename } = $self->{ ppt }{ content }{ raw };
+	delete $self->{ ppt }{ content }{ raw };
+    }
 
     my $filename = $self->{ ppt }{ content }{ filename };
     
