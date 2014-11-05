@@ -102,12 +102,10 @@ sub code {
 
 sub desc {
     my $self = shift;
-    my ( $num ) = @_;
+    my @num = @_;
     my $l = $self->{ label };
 
-    $num ||= 0;
-
-    return $l->{ "desc.$num" } || '';
+    return join " ", grep { $_ } map { $l->{ "desc.$_" } } @num;
 }
 
 sub copyright {

@@ -1,9 +1,0 @@
-dec-s8-uextb-a-pb7
-1/18/74
-m
-
-os/8 viii extension binary tape
-batch
-tape 7 of 9
-
-copyright (c) digital equipment corporation 1969,72,74

@@ -1,0 +1,22 @@
+[content]
+filename=content.raw
+
+[label]
+code=nr
+copyright=1969,72,74
+copyright.long=copyright (c) %s digital equipment corporation
+date=12/31/75
+desc.0=os/8 viii extension binary tape
+desc.1=basic eae overlay (eaeovr.bn)
+desc.2=tape 5 of 9
+id=dec-s8-uextb-a-pb5
+
+[location]
+slot=5
+tray=12
+
+[source]
+donated=Univeriteit Wageningen
+email=museum@hack42.nl
+media=physical
+name=Hack42

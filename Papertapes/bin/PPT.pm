@@ -95,7 +95,7 @@ sub content_filename {
 
 sub inifile {
     my $self = shift;
-    
+
     return sprintf "%s/ppt.ini", $self->{ path };
 }
 

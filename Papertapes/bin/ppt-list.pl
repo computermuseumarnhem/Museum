@@ -1,27 +1,29 @@
 #!/usr/bin/perl -w
+# vim: set sw=4 sts=4 si:
 
 use strict;
-
-use Config::Tiny;
 use File::Basename;
+use lib dirname( $0 );
+use PPT;
 
-my @ppt = glob( "*/ppt.ini" );
+my @ppts = @ARGV;
 
-foreach ( sort @ppt ) {
+foreach my $f ( @ppts ) {
 
-	my $ini = Config::Tiny->read( $_ );
-	my $l = $ini->{ label };
-	my $b = $ini->{ location };
-	my $loc = '';
+    my $ppt = PPT->open( $f ) or next;
 
-	if ( $b->{ box } ) {
-		$loc = sprintf( "%02d/%02d", $b->{ box }, $b->{ slot } );
-	}	
+    my $l = $ppt->label();
+    my $b = $ppt->location();
+    my $loc = '';
 
-	printf "%-25s %-5s %-25s %s\n", 
-		dirname( $_ ) . ":",
-		$loc,		
-		$l->{ label }, 
-		join( " ", grep { $_ } ( $l->{ desc }, $l->{ desc1 }, $l->{ desc2 } ) );
+    if ( $b->tray() ) {
+	$loc = sprintf( "%02d/%02d", $b->tray(), $b->slot() );
+    }	
+
+    printf "%-25s %-5s %-25s %s\n", 
+	$f  . ":",
+	$loc,		
+	$l->id(), 
+	$l->desc( 0 .. 9 ); 
 
 }

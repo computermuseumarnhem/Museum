@@ -1,9 +1,0 @@
-dec-s8-uextb-a-pb8
-12/31/75
-nr
-
-os/8 viii extension binary tape
-teco
-tape 8 of 9
-
-copyright (c) 1969,72,74 digital equipment corporation

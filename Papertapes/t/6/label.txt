@@ -1,9 +1,0 @@
-dec-s8-uextb-a-pb6
-1/18/74
-m
-
-os/8 viii extension binary tape
-basic user function overlay
-(basic.uf)      tape 6 of 9
-
-copyright (c) digital equipment corporation 1969,74,74
