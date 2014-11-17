@@ -11,6 +11,7 @@ use Data::Dumper;
 use PPT::Label;
 use PPT::Location;
 use PPT::Data;
+use PPT::Part;
 
 sub open {
     my $class = shift;
@@ -98,5 +99,31 @@ sub inifile {
 
     return sprintf "%s/ppt.ini", $self->{ path };
 }
+
+sub parts {
+    my $self = shift;
+    
+    my $p = 0;
+    while ( $self->{ ppt }{ "part.$p" } ) {
+	$p++;
+    }
+    return $p;
+}
+
+sub part {
+    my $self = shift;
+    my @p = @_ || ( 0 .. $self->parts() - 1 );
+    my @parts = ();
+
+    foreach my $p ( @p ) {
+	my $part = PPT::Part->part( $self->{ ppt }{ "part.$p" } );
+	push @parts, $part if $part;
+    }
+
+    return @parts if wantarray;
+    return $parts[ 0 ];
+}
+
+sub part
 
 1;
