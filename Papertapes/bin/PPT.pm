@@ -58,11 +58,11 @@ sub location {
     return PPT::Location->new( $self->{ ppt }{ location } );
 }
 
-sub content {
+sub read_data {
     my $self = shift;
 
-    CORE::open FH, "<", $self->content_filename()
-	or die sprintf "Can't open %s: %s", $self->content_filename(), "$!";
+    CORE::open FH, "<", $self->data_filename()
+	or die sprintf "Can't open %s: %s", $self->data_filename(), "$!";
     binmode FH;
     local $/ = undef;
     $self->{ data } = <FH>;
@@ -73,12 +73,12 @@ sub content {
 sub raw {
     my $self = shift;
 
-    $self->content() unless $self->{ data };
+    $self->read_data() unless $self->{ data };
 
     return PPT::Data->new( $self->{ data } );
 }
 
-sub content_filename {
+sub data_filename {
     my $self = shift;
 
     if ( $self->{ ppt }{ content }{ raw } ) {
@@ -112,18 +112,19 @@ sub parts {
 
 sub part {
     my $self = shift;
-    my @p = @_ || ( 0 .. $self->parts() - 1 );
-    my @parts = ();
+    my ( $p ) = @_;
 
-    foreach my $p ( @p ) {
-	my $part = PPT::Part->part( $self->{ ppt }{ "part.$p" } );
-	push @parts, $part if $part;
-    }
+    return undef if $p < 0;
+    return undef if $p >= $self->parts();
 
-    return @parts if wantarray;
-    return $parts[ 0 ];
+    my $part = PPT::Part->part( $self->{ ppt }{ "part.$p" } );
+    return $part;
 }
 
-sub part
+sub content {
+    my $self = shift;
+
+    return PPT::Part->part( $self->{ ppt }{ content } );
+}
 
 1;
