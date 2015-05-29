@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "2344",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "554",
+            "end" : "1655",
+            "type" : "pdp12/ascii"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1973,74"
+   },
+   "date" : "5/74",
+   "description" : [
+      "OS/12 FORTRAN IV V02 ADC",
+      "TAPE 3 OF 3"
+   ],
+   "label" : "DEC-12-LLIBA-PB-PA3",
+   "labelcode" : "M",
+   "location" : {
+      "slot" : "1",
+      "tray" : "4"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

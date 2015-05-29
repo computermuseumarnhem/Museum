@@ -1,0 +1,30 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "6461",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1976"
+   },
+   "date" : "5/25/76",
+   "description" : [
+      "RK8E DATA RELIABILITY PROGRAM"
+   ],
+   "label" : "MAINDEC-08-DHRKC-G-PB",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "7",
+      "tray" : "1"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

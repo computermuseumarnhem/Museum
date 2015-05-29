@@ -1,0 +1,28 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "2011",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      }
+   },
+   "date" : "MAY 31.74",
+   "description" : [
+      "SOURCE BINARY DUMP"
+   ],
+   "label" : "USER-02",
+   "location" : {
+      "slot" : "7",
+      "tray" : "4"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

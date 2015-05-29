@@ -1,0 +1,39 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "16377",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "0",
+            "end" : "16377",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1969,74,76"
+   },
+   "date" : "05/17/77",
+   "description" : [
+      "OS/8 V3C OPERATING SYSTEM",
+      "TAPE 2 OF 5 BUILD HANDLERS TAPE #1",
+      "(FILE STRUCTURED HANDLERS)"
+   ],
+   "label" : "DEC-S8-OSYSB-B-PB2",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "2",
+      "tray" : "5"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

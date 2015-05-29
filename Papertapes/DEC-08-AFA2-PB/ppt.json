@@ -1,0 +1,24 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "1298",
+      "filename" : "content.bin",
+      "part" : [
+         {
+            "begin" : "166",
+            "end" : "698",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "description" : [
+      "Fortran Symbol Print",
+      "Use With 08-AFC1-PB Compiler"
+   ],
+   "label" : "DEC-08-AFA2-PB",
+   "source" : {
+      "email" : "hachti@hachti.de",
+      "name" : "Philipp Hachtmann",
+      "url" : "http://pdp8.hachti.de/pdp8l/software/"
+   }
+}

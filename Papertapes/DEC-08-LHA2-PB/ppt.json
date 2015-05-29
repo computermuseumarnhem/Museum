@@ -1,0 +1,23 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "738",
+      "filename" : "content.bin",
+      "part" : [
+         {
+            "begin" : "95",
+            "end" : "368",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "description" : [
+      "Help Generator"
+   ],
+   "label" : "DEC-08-LHA2-PB",
+   "source" : {
+      "email" : "hachti@hachti.de",
+      "name" : "Philipp Hachtmann",
+      "url" : "http://pdp8.hachti.de/pdp8l/software/"
+   }
+}

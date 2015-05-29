@@ -1,0 +1,30 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "9291",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1975"
+   },
+   "date" : "4/23/76",
+   "description" : [
+      "RX8/RX01 DIAGNOSTIC PROGRAM"
+   ],
+   "label" : "MAINDEC-08-DIRXA-P-PB",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "4",
+      "tray" : "3"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

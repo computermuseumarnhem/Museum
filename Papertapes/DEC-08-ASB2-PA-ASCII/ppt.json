@@ -1,0 +1,33 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "3315",
+      "filename" : "content.bin",
+      "part" : [
+         {
+            "begin" : "168",
+            "end" : "1154",
+            "type" : "pdp8/ascii"
+         },
+         {
+            "begin" : "1226",
+            "end" : "2155",
+            "type" : "pdp8/ascii"
+         },
+         {
+            "begin" : "2213",
+            "end" : "2934",
+            "type" : "pdp8/ascii"
+         }
+      ]
+   },
+   "description" : [
+      "PAL III EXTENDED SYMBOLS"
+   ],
+   "label" : "DEC-08-ASB2-PA-ASCII",
+   "source" : {
+      "email" : "hachti@hachti.de",
+      "name" : "Philipp Hachtmann",
+      "url" : "http://pdp8.hachti.de/pdp8l/software/"
+   }
+}

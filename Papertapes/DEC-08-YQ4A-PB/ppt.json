@@ -1,0 +1,25 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "4545",
+      "filename" : "content.bin",
+      "part" : [
+         {
+            "begin" : "479",
+            "end" : "4018",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "description" : [
+      "Floating Point Package 4 D",
+      "Interpreter; 1/0; 1/0",
+      "Controller 7;40-62-4557-7577"
+   ],
+   "label" : "DEC-08-YQ4A-PB",
+   "source" : {
+      "email" : "hachti@hachti.de",
+      "name" : "Philipp Hachtmann",
+      "url" : "http://pdp8.hachti.de/pdp8l/software/"
+   }
+}

@@ -1,0 +1,37 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "4341",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "228",
+            "end" : "3557",
+            "type" : "pdp8/unknown"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1969"
+   },
+   "date" : "2/28/69",
+   "description" : [
+      "8K FORTRAN LIBRARY SUBROUTINES",
+      "TAPE 2 OF 2"
+   ],
+   "label" : "DEC-08-A2B5-PR",
+   "location" : {
+      "slot" : "2",
+      "tray" : "2"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

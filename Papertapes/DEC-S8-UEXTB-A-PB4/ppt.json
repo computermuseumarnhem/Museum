@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "10588",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "0",
+            "end" : "10588",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %S DIGITAL EQUIPMENT CORPORATION"
+      },
+      "year" : "1969,72,74"
+   },
+   "date" : "12/31/75",
+   "description" : [
+      "OS/8 VIII EXTENSION BINARY TAPE",
+      "BASIC RUNTIME SYSTEM (BRTS.BN)",
+      "TAPE 4 OF 9"
+   ],
+   "label" : "DEC-S8-UEXTB-A-PB4",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "4",
+      "tray" : "12"
+   },
+   "media" : "physical",
+   "origin" : "Univeriteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

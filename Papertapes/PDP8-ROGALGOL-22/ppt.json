@@ -1,0 +1,29 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "1326",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      }
+   },
+   "description" : [
+      "ROGALGOL COMPILER, RUNTIME",
+      "16K OVERLAYS",
+      "SOURCE VERIFIED"
+   ],
+   "label" : "PDP8-ROGALGOL-22",
+   "location" : {
+      "slot" : "8",
+      "tray" : "6"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

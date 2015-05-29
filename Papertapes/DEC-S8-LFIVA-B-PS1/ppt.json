@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "12782",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "468",
+            "end" : "11208",
+            "type" : "pdp8/unknown"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1973,74"
+   },
+   "date" : "12/31/75",
+   "description" : [
+      "OS/8 FORTRAN IV V02 F4.SV",
+      "TAPE 1 OF 4"
+   ],
+   "label" : "DEC-S8-LFIVA-B-PS1",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "1",
+      "tray" : "10"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "7653",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "449",
+            "end" : "7090",
+            "type" : "pdp8/ascii"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1974,75"
+   },
+   "date" : "12/29/75",
+   "description" : [
+      "RTS-8 V02 PAPERTAPE",
+      "LTA.PA TAPE 16 OF 18"
+   ],
+   "label" : "DEC-S8-ORTSA-B-PA16",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "2",
+      "tray" : "8"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

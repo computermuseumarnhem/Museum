@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "1524",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "424",
+            "end" : "705",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1969"
+   },
+   "date" : "10/1/69",
+   "description" : [
+      "BINARY PUNCH-TELETYPE (ASR33)",
+      "SA=7465 SR=NO. OF BLOCKS",
+      "STARTING ADDRESS-FINAL ADDRESS"
+   ],
+   "label" : "DEC-08-YX1A-PB",
+   "location" : {
+      "slot" : "8",
+      "tray" : "3"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

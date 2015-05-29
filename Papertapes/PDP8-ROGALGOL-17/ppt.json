@@ -1,0 +1,28 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "2007",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      }
+   },
+   "description" : [
+      "OS/8 COMPILER PATCH",
+      "VERIFIED"
+   ],
+   "label" : "PDP8-ROGALGOL-17",
+   "location" : {
+      "slot" : "3",
+      "tray" : "6"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}
