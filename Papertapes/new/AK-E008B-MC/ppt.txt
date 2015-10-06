@@ -1,0 +1,5 @@
+label=AK-E008B-MC
+code=NR
+descr=CVDVCB0 DLV11-F OFFLINE TEST
+copyright=date=1977,78
+copyright=long=COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION

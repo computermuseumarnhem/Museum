@@ -1,0 +1,3 @@
+label=EDIT10
+descr=EDIT 10\n#990077\nType III
+copyright=short="Tektronix"
