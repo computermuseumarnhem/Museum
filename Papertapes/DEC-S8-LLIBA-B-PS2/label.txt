@@ -1,5 +1,0 @@
-DEC-S8-LLIBA-B-PS2      7/22/75  M
-OS/8 FORTRAN IV V02 FORLIB.SV
-TAPE 2 OF 6
-
-                           1973,74

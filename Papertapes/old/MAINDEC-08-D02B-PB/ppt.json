@@ -1,0 +1,23 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "1145",
+      "filename" : "content.bin",
+      "part" : [
+         {
+            "begin" : "0",
+            "end" : "1145",
+            "type" : "pdp8/unknown"
+         }
+      ]
+   },
+   "description" : [
+      "Instruction Test - Part 2B"
+   ],
+   "label" : "MAINDEC-08-D02B-PB",
+   "source" : {
+      "email" : "hachti@hachti.de",
+      "name" : "Philipp Hachtmann",
+      "url" : "http://pdp8.hachti.de/pdp8l/software/"
+   }
+}

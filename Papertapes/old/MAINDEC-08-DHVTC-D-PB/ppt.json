@@ -1,0 +1,31 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "8064",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1975,76"
+   },
+   "date" : "09/14/77",
+   "description" : [
+      "VT50-VT52 VIDEO TERMINAL",
+      "ACCEPTANCE TEST"
+   ],
+   "label" : "MAINDEC-08-DHVTC-D-PB",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "3",
+      "tray" : "3"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

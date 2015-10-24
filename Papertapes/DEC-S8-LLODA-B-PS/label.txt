@@ -1,5 +1,0 @@
-DEC-S8-LLODA-B-PS        9/4/75  M
-OS/8 FORTRAN IV V02 LOAD.SV
-
-
-        1973,74

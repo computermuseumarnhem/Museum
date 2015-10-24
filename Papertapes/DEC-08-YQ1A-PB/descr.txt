@@ -1,3 +1,0 @@
-Floating Point Package 1
-Basic System
-7;40-61;5600-7577 A

@@ -1,0 +1,28 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "2524",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "(C) %s VG DATA SYSTEMS LTD",
+         "short" : "(C) %s VG DATA"
+      },
+      "year" : "SEPTEMBER 1973"
+   },
+   "description" : [
+      "DEVICE CODE = 51"
+   ],
+   "label" : "VGDIAG-PB-8E-300-PB",
+   "location" : {
+      "slot" : "2",
+      "tray" : "3"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

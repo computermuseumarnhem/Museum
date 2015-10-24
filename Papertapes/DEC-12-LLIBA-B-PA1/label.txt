@@ -1,5 +1,0 @@
-DEC-12-LLIBA-B-PA1      1/22/76  NR
-OS/12 FORTRAN IV V02 REALTM
-TAPE 1 OF 3
-
-                           1973,74

@@ -1,18 +1,18 @@
-102 7325 # cla cll cml iac ral
-103 7120 # cla cml
-104 7004 # rotate left
-105 6446 # output
-106 6441 # skip if ready
-107 5106 # goto 6
-110 7420 # skip on non zero link
-111 5104 # goto 4
-112 7010 # rotate right
-113 6446 # output
-114 6441 # skip if ready
-115 5114 # goto 14
-116 7420 # skip on non zero link
-117 5112 # goto 12
-120 5104 # goto 4
+200 7325 # 		cla cll cml iac ral
+201 7120 # 		cll cml
+202 7004 # 	left	ral
+203 6446 # 		output
+204 6441 # 		skip if ready
+205 5204 # 		goto .-1
+206 7420 # 		skip on non zero link
+207 5202 # 		goto left
+210 7010 # 	right	rar
+211 6446 # 		output
+212 6441 # 		skip if ready
+213 5212 # 		goto .-1
+214 7420 # 		skip on non zero link
+215 5210 # 		goto right
+216 5202 # 		goto left
 
 
 

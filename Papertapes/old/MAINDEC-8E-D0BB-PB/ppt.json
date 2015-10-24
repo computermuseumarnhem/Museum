@@ -1,0 +1,29 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "4934",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1971"
+   },
+   "date" : "6/10/71",
+   "description" : [
+      "PDP-8E INSTRUCTION TEST 2"
+   ],
+   "label" : "MAINDEC-8E-D0BB-PB",
+   "location" : {
+      "slot" : "4",
+      "tray" : "1"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

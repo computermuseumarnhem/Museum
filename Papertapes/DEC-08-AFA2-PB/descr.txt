@@ -1,2 +1,0 @@
-Fortran Symbol Print
-Use With 08-AFC1-PB Compiler

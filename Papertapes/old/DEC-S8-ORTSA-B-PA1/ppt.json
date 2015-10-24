@@ -1,0 +1,59 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "9287",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "475",
+            "end" : "1529",
+            "type" : "pdp8/ascii"
+         },
+         {
+            "begin" : "1539",
+            "end" : "3446",
+            "type" : "pdp8/ascii"
+         },
+         {
+            "begin" : "3456",
+            "end" : "6688",
+            "type" : "pdp8/ascii"
+         },
+         {
+            "begin" : "6698",
+            "end" : "7739",
+            "type" : "pdp8/ascii"
+         },
+         {
+            "begin" : "7749",
+            "end" : "8675",
+            "type" : "pdp8/ascii"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1974,75"
+   },
+   "date" : "12/29/75",
+   "description" : [
+      "RTS-8 V02 PAPERTAPE",
+      "SWAP.PA",
+      "TAPE 1 OF 18"
+   ],
+   "label" : "DEC-S8-ORTSA-B-PA1",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "1",
+      "tray" : "7"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

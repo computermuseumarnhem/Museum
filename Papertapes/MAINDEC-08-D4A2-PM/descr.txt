@@ -1,2 +1,0 @@
-PDP-8 8I Memory Parity
-Checkerboard (High)

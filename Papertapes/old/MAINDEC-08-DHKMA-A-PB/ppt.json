@@ -1,0 +1,31 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "4236",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1972"
+   },
+   "date" : "4/10/72",
+   "description" : [
+      "PDP-8E EXTENDED MEMORY DATA",
+      "AND CHECKERBOARD TEST",
+      "REPLACES: MAINDEC-8E-DIBC-PB"
+   ],
+   "label" : "MAINDEC-08-DHKMA-A-PB",
+   "location" : {
+      "slot" : "3",
+      "tray" : "1"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "18971",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "498",
+            "end" : "17430",
+            "type" : "pdp8/unknown"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1973,74"
+   },
+   "date" : "7/22/75",
+   "description" : [
+      "OS/8 FORTRAN IV V02 FORLIB. SV",
+      "TAPE 3 OF 6"
+   ],
+   "label" : "DEC-S8-LLIBA-B-PS3",
+   "labelcode" : "M",
+   "location" : {
+      "slot" : "7",
+      "tray" : "2"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

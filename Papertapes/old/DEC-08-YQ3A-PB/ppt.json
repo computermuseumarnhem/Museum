@@ -1,0 +1,25 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "3942",
+      "filename" : "content.bin",
+      "part" : [
+         {
+            "begin" : "78",
+            "end" : "3353",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "description" : [
+      "Floating Point Package 3",
+      "Interpreter; I/O; Functions",
+      "7;40-61;4757-7577 C"
+   ],
+   "label" : "DEC-08-YQ3A-PB",
+   "source" : {
+      "email" : "hachti@hachti.de",
+      "name" : "Philipp Hachtmann",
+      "url" : "http://pdp8.hachti.de/pdp8l/software/"
+   }
+}

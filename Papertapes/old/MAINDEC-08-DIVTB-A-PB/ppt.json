@@ -1,0 +1,30 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "3829",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1974"
+   },
+   "date" : "6/1/76",
+   "description" : [
+      "VT20 HOST COMPUTER PROGRAM"
+   ],
+   "label" : "MAINDEC-08-DIVTB-A-PB",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "5",
+      "tray" : "3"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

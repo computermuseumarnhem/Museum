@@ -1,0 +1,37 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "3659",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "315",
+            "end" : "2981",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1969"
+   },
+   "date" : "10/30/69",
+   "description" : [
+      "8K-32K LINKING LOADER",
+      "(PAPER TAPE VERSION)"
+   ],
+   "label" : "DEC-08-A2C3-PB",
+   "location" : {
+      "slot" : "1",
+      "tray" : "2"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

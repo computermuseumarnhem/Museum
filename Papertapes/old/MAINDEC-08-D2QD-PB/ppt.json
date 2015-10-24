@@ -1,0 +1,17 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "4320",
+      "filename" : "content.bin"
+   },
+   "description" : [
+      "Family Of 8 ASR33/35",
+      "Teletype Tests Part 2"
+   ],
+   "label" : "MAINDEC-08-D2QD-PB",
+   "source" : {
+      "email" : "hachti@hachti.de",
+      "name" : "Philipp Hachtmann",
+      "url" : "http://pdp8.hachti.de/pdp8l/software/"
+   }
+}

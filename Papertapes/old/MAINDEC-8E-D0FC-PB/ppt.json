@@ -1,0 +1,29 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "1784",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1971"
+   },
+   "date" : "6/11/71",
+   "description" : [
+      "RANDOM ISZ TEST"
+   ],
+   "label" : "MAINDEC-8E-D0FC-PB",
+   "location" : {
+      "slot" : "1",
+      "tray" : "1"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

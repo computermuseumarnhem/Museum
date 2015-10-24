@@ -1,3 +1,0 @@
-Floating Point Package 3
-Interpreter; I/O; Functions
-7;40-61;4757-7577 C

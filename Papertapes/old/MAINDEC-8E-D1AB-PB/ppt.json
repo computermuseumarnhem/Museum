@@ -1,0 +1,29 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "2304",
+      "filename" : "content.raw"
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION %s",
+         "short" : "(C) DIGITAL EQUIP. CORP. %s"
+      },
+      "year" : "1971"
+   },
+   "date" : "6/7/71",
+   "description" : [
+      "MM8E 4K MEMORY CHECKERBOARD"
+   ],
+   "label" : "MAINDEC-8E-D1AB-PB",
+   "location" : {
+      "slot" : "5",
+      "tray" : "1"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

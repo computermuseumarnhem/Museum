@@ -1,5 +1,0 @@
-USER-01                 5/31/74
-BINARY DUMP
-START: FIELD1-2000
-
-

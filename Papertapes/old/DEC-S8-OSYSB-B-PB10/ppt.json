@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "6901",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "495",
+            "end" : "6091",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1969,74,76"
+   },
+   "date" : "05/02/77",
+   "description" : [
+      "OS/8 V3C OPERATING SYSTEM",
+      "TAPE 10 OF 25 (CREF.BN)"
+   ],
+   "label" : "DEC-S8-OSYSB-B-PB10",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "7",
+      "tray" : "5"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

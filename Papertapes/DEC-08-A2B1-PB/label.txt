@@ -1,5 +1,0 @@
-DEC-08-A2B1-PB          2/28/69
-8K FORTRAN COMPILER
-SA: 1000 (FIELD 1)
-
-                           1969

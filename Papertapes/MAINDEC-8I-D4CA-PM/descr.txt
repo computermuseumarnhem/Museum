@@ -1,1 +1,0 @@
-PDP-8I Memory Parity IOT Test

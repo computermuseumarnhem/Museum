@@ -1,0 +1,37 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "15862",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "488",
+            "end" : "14324",
+            "type" : "pdp8/unknown"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1973,74"
+   },
+   "date" : "12/31/75",
+   "description" : [
+      "OS/8 FORTRAN IV V02 FRTS.SV"
+   ],
+   "label" : "DEC-S8-LRTSA-B-PS",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "7",
+      "tray" : "10"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}

@@ -1,0 +1,38 @@
+{
+   "content" : {
+      "begin" : "0",
+      "end" : "14453",
+      "filename" : "content.raw",
+      "part" : [
+         {
+            "begin" : "540",
+            "end" : "13877",
+            "type" : "pdp8/bin"
+         }
+      ]
+   },
+   "copyright" : {
+      "format" : {
+         "long" : "COPYRIGHT (C) %s DIGITAL EQUIPMENT CORPORATION",
+         "short" : "(C) %s DIGITAL EQUIP. CORP."
+      },
+      "year" : "1969,74,76"
+   },
+   "date" : "9/30/76",
+   "description" : [
+      "OS/8 V3C OPERATING SYSTEM",
+      "TAPE 1 OF 25 (BUILD.BN)"
+   ],
+   "label" : "DEC-S8-OSYSB-B-PB1",
+   "labelcode" : "NR",
+   "location" : {
+      "slot" : "1",
+      "tray" : "5"
+   },
+   "media" : "physical",
+   "origin" : "Universiteit Wageningen",
+   "source" : {
+      "email" : "museum@hack42.nl",
+      "name" : "Hack42"
+   }
+}
