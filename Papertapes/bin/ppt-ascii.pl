@@ -8,10 +8,18 @@ my @ascii = unpack( "C*", <>  );
 
 my $tab = 0;
 my $nwl = 0;
+my $nul = 0;
 
 foreach ( @ascii ) {
 
+	if ( $_ == 0 ) {
+		printf "%s\n", '-' x 80 unless $nul;
+		$nul = 1;
+	}
+
 	next unless $_ & 0x80;
+
+	$nul = 0;
 
 	$_ &= 0x7f;
 

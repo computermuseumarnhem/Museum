@@ -1,57 +1,53 @@
 #!/usr/bin/perl -w
 
+# vim: set sw=4 sts=4 si:
+
 use strict;
+use Data::Printer;
 
-sub ppt {
-	my $b = shift;
+my $length = 16;
 
-	return
-		( ( $b & 0x80 ) ? 'o' : ' ' ) .
-		( ( $b & 0x40 ) ? 'o' : ' ' ) .
-		( ( $b & 0x20 ) ? 'o' : ' ' ) .
-		( ( $b & 0x10 ) ? 'o' : ' ' ) .
-		( ( $b & 0x08 ) ? 'o' : ' ' ) .
-		'.' .
-		( ( $b & 0x04 ) ? 'o' : ' ' ) .
-		( ( $b & 0x02 ) ? 'o' : ' ' ) .
-		( ( $b & 0x01 ) ? 'o' : ' ' );
+my @line = ();
+my $index = 0;
+
+while ( my $c = getc ) {
+
+    push @line, $c;
+
+    unless ( scalar @line < $length ) {
+	print_line( $index, @line );
+	$index += $length;
+	@line = ();
+    }
+
 }
 
-my @ascii = qw( NUL SOH STX ETX EOT ENQ ACK BEL BS HT LF VT FF CR SO SI DLE DC1 DC2 DC3 DC4 NAK SYN ETB CAN EM SUM ESC FS GS RS US SPACE );
+sub print_line {
+    my ( $index, @line ) = @_;
 
-sub asc {
-	my $b = shift;
-
-        if ( $b < 32 ) {
-		return sprintf( "%-3s ^%1s", $ascii[ $b ], chr( $b + 64 ) );
-	} elsif ( $b == 32 ) {
-		return $ascii[ $b ];
-	} elsif ( $b == 127 ) {
-		return "DEL";
-	} elsif ( $b > 127 ) { 
-		return "";
-	} else {
-		return chr( $b );
-	} 	 
-}
-
-binmode STDIN;
-
-printf "%s\t%s\t%s\t%s\t%s\t%s\n", " ADDR", "DEC"," HEX"," OCT"," CHAR", "       PPT";
-printf "%s\t%s\t%s\t%s\t%s\t%s\n", "------", "---","----","----","------","-----------";
-
-my $a = 0;
-while ( my $line = <> ) {
-
-	foreach my $b ( unpack( 'C*', $line ) ) {
-
-		printf "%5d:\t%3d\t0x%02x\t0%03o\t%s\t|%-9.9s|", $a, $b, $b, $b, asc( $b ), ppt( $b );
-		if ( $b & 0200 ) {
-			printf "\t%s", asc( $b & 0177 );
-		}
-		print "\n";
-		
-		$a++;
-
+    printf( "%06o  ", $index );
+    foreach ( 0 .. $length - 1 ) {
+	unless ( $_ % 8 ) {
+	    print " ";
 	}
+	if ( defined $line[ $_ ] ) {
+	    printf "%03o ", ord $line[ $_ ];
+	} else {
+	    print "    ";
+	}
+    }
+    print "  ";
+    foreach ( 0 .. $length - 1 ) {
+	if ( defined $line[ $_ ] ) {
+	    my $c = ord $line[ $_ ] ^ 0200;
+	    $c = ord '.' if $c < 32;
+	    $c = ord '.' if $c > 126;
+	    printf "%c", $c;
+	} else { 
+	    print " "
+	}
+    }
+
+    print "\n";
 }
+
