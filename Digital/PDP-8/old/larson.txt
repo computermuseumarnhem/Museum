@@ -1,0 +1,18 @@
+200 7325 # 		cla cll cml iac ral
+201 7120 # 		cll cml
+202 7004 # 	left	ral
+203 6446 # 		output
+204 6441 # 		skip if ready
+205 5204 # 		goto .-1
+206 7420 # 		skip on non zero link
+207 5202 # 		goto left
+210 7010 # 	right	rar
+211 6446 # 		output
+212 6441 # 		skip if ready
+213 5212 # 		goto .-1
+214 7420 # 		skip on non zero link
+215 5210 # 		goto right
+216 5202 # 		goto left
+
+
+

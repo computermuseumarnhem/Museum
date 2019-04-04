@@ -1,0 +1,42 @@
+RIMLD,	KCC	TT0	/ initialize keyboard
+
+WAIT1,	KSF	TT0	/ wait for keyboard flag
+	JMP	WAIT1	/ 
+
+	KRB	TT0	/ load first half-word in accumulator
+
+	CLL RTL		/ shift left 4 bits. 
+	RTL		/ 
+	
+	SPA		/ if char was 0200 (leader) 
+	JMP	WAIT1	/ jump back to read first half-word
+
+	RTL		/ shift-left twice. 
+			/ now the first half-word is in place
+			/ link is set if it was an address
+
+WAIT2,	KSF	TT0	/ wait for keyboard flag
+	JMP 	WAIT2	/
+
+	KRS	TT0	/ load second half-word into accumulator 
+			/ (OR it onto the accumulator)
+
+	SNL		/ if ( !link ) 
+	DCA I	ADDRS	/ store data word in location pointed to
+			/ in 7776
+			/ else
+	DCA	ADDRS	/ store address in 7776
+
+	JMP	RIMLD	/ start over 
+
+ADDRS,	0000
+
+/ remarks: there's no input sanitation. 
+/ ugly stuff will happen if, second half-word > 077, or tape doesn't
+/ start with address word, or there's no address word before a data-
+/ word.
+/ also no provisioning for end-of-tape.
+/ however, if the last address/data combo is 7775/JMP somewhere
+/ or 7775/HLT it will do just that instead of waiting for the next
+/ character
+
