@@ -1,0 +1,11 @@
+C:\DOCUME~1\nw\Desktop\IBMDW>..\imd\imdu 01.imd 01.bin /b
+IMageDisk Utility 1.18 / Mar 07 2012
+IMD TD 1.5 3.5 HD MFM S-step, 1 sides ADV 30/03/2005 23:48:57
+DRI Disk with odd CP/M-86 format
+Assuming 1:1 for Binary output
+ 0/0 500 kbps SD  26x128
+ 1/0 500 kbps SD  15x256
+ 6/0 500 kbps DD  8x1024
+77 tracks(77/0), 669 sectors (225 Compressed)
+
+C:\DOCUME~1\nw\Desktop\IBMDW>dir
